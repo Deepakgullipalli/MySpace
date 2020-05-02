@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0748B0E4-A030-400C-8F92-CC29EAC901A3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Puzzles</RootNamespace>
+    <AssemblyName>Puzzles</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\TestDataLayerEntity.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartUp.cs" />
+    <Compile Include="Tasks\Anagrams.cs" />
+    <Compile Include="Tasks\ArrayContentCountSorting.cs" />
+    <Compile Include="Tasks\ArraySubSets.cs" />
+    <Compile Include="Tasks\BinarySearch.cs" />
+    <Compile Include="Tasks\DataLayer.cs" />
+    <Compile Include="Tasks\Dijkstra.cs" />
+    <Compile Include="Tasks\DisjointIntervals.cs" />
+    <Compile Include="Tasks\FactorsOfThreeAndFive.cs" />
+    <Compile Include="Tasks\Fibonacci.cs" />
+    <Compile Include="Tasks\FunWithAnagrams.cs" />
+    <Compile Include="Tasks\Knapsack.cs" />
+    <Compile Include="Tasks\MaxSumArray.cs" />
+    <Compile Include="Tasks\Microsoft\Abstract\Abstraction.cs" />
+    <Compile Include="Tasks\Microsoft\Abstract\IAbstraction.cs" />
+    <Compile Include="Tasks\Microsoft\Abstract\Standard.cs" />
+    <Compile Include="Tasks\Microsoft\AsyncTask\MsTen.cs" />
+    <Compile Include="Tasks\Microsoft\BinaryJumps\BinaryJumps.cs" />
+    <Compile Include="Tasks\Microsoft\Constructor\MsFour.cs" />
+    <Compile Include="Tasks\Microsoft\Delegates\MsEight.cs" />
+    <Compile Include="Tasks\Microsoft\Delegates\MsEleven.cs" />
+    <Compile Include="Tasks\Microsoft\Exception\MsSeven.cs" />
+    <Compile Include="Tasks\Microsoft\Inheritance\MsOne.cs" />
+    <Compile Include="Tasks\Microsoft\Inheritance\MsThree.cs" />
+    <Compile Include="Tasks\Microsoft\Inheritance\MsTwo.cs" />
+    <Compile Include="Tasks\Microsoft\Inheritance\NewModifier.cs" />
+    <Compile Include="Tasks\Microsoft\Inheritance\Test.cs" />
+    <Compile Include="Tasks\Microsoft\MainMethod\MsFive.cs" />
+    <Compile Include="Tasks\Microsoft\NullCheck\MsNine.cs" />
+    <Compile Include="Tasks\Microsoft\Struct\MsSeventeen.cs" />
+    <Compile Include="Tasks\NoOfMarkers.cs" />
+    <Compile Include="Tasks\OperationOnSets.cs" />
+    <Compile Include="Tasks\QueensMoves.cs" />
+    <Compile Include="Tasks\RollingString.cs" />
+    <Compile Include="Tasks\Shell\ShellOne.cs" />
+    <Compile Include="Tasks\Shell\ShellTwo.cs" />
+    <Compile Include="Tasks\Siemens\MaximumPositiveIndex.cs" />
+    <Compile Include="Tasks\SingleOccurenceElements.cs" />
+    <Compile Include="Tasks\Sorting\BubbleSort.cs" />
+    <Compile Include="Tasks\Sorting\HeapSort.cs" />
+    <Compile Include="Tasks\Sorting\InsertionSort.cs" />
+    <Compile Include="Tasks\Sorting\MergeSort.cs" />
+    <Compile Include="Tasks\Sorting\QuickSort.cs" />
+    <Compile Include="Tasks\Sorting\RecursiveBubbleSort.cs" />
+    <Compile Include="Tasks\Sorting\SelectionSort.cs" />
+    <Compile Include="Tasks\SumOfAllSubArraysEqualToK.cs" />
+    <Compile Include="Tasks\Test.cs" />
+    <Compile Include="Tasks\TheDuel.cs" />
+    <Compile Include="Tasks\ThePerfectTeam.cs" />
+    <Compile Include="Tasks\TopViewBT.cs" />
+    <Compile Include="Tasks\TowerOfHanoi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Problems\Amazon\Questions.txt" />
+    <Content Include="Problems\Anagrams\Screenshot 2018-11-10 15.32.34.png" />
+    <Content Include="Problems\Anagrams\Screenshot 2018-11-10 15.32.50.png" />
+    <Content Include="Problems\Anagrams\Screenshot 2018-11-10 15.34.01.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.49.00.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.49.15.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.49.25.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.49.37.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.49.51.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.50.09.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.50.26.png" />
+    <Content Include="Problems\Cardlytics\ThePerfectTeam\Screenshot 2019-01-20 10.50.52.png" />
+    <Content Include="Problems\Citrix\OddDivisorsSummation\ProblemStatement\Screenshot 2019-01-23 20.47.40.png" />
+    <Content Include="Problems\Citrix\OddDivisorsSummation\ProblemStatement\Screenshot 2019-01-23 20.47.49.png" />
+    <Content Include="Problems\Citrix\OddDivisorsSummation\ProblemStatement\Screenshot 2019-01-23 20.47.59.png" />
+    <Content Include="Problems\Citrix\OddDivisorsSummation\ProblemStatement\Screenshot 2019-01-23 20.48.09.png" />
+    <Content Include="Problems\Citrix\OddDivisorsSummation\Solution\Screenshot 2019-01-23 21.42.50.png" />
+    <Content Include="Problems\Citrix\ReverseString\ProblemStatement\Screenshot 2019-01-23 20.46.29.png" />
+    <Content Include="Problems\Citrix\ReverseString\ProblemStatement\Screenshot 2019-01-23 20.46.57.png" />
+    <Content Include="Problems\Citrix\ReverseString\ProblemStatement\Screenshot 2019-01-23 20.47.19.png" />
+    <Content Include="Problems\Citrix\ReverseString\ProblemStatement\Screenshot 2019-01-23 20.47.27.png" />
+    <Content Include="Problems\Citrix\ReverseString\Solution\Screenshot 2019-01-23 21.29.48.png" />
+    <Content Include="Problems\Keyboard\Screenshot 2018-02-18 16.56.59.png" />
+    <Content Include="Problems\Keyboard\Screenshot 2018-02-18 16.57.19.png" />
+    <Content Include="Problems\Microsoft\10\Screenshot 2018-12-01 15.17.20.png" />
+    <Content Include="Problems\Microsoft\10\Screenshot 2018-12-01 15.17.44.png" />
+    <Content Include="Problems\Microsoft\10\Screenshot 2018-12-01 15.18.10.png" />
+    <Content Include="Problems\Microsoft\11\Screenshot 2018-12-01 15.20.03.png" />
+    <Content Include="Problems\Microsoft\11\Screenshot 2018-12-01 15.20.11.png" />
+    <Content Include="Problems\Microsoft\11\Screenshot 2018-12-01 15.20.18.png" />
+    <Content Include="Problems\Microsoft\12\Screenshot 2018-12-01 15.21.05.png" />
+    <Content Include="Problems\Microsoft\13\Screenshot 2018-12-01 15.21.25.png" />
+    <Content Include="Problems\Microsoft\14\Screenshot 2018-12-01 15.21.47.png" />
+    <Content Include="Problems\Microsoft\15\Screenshot 2018-12-01 15.22.09.png" />
+    <Content Include="Problems\Microsoft\16\Screenshot 2018-12-01 15.22.45.png" />
+    <Content Include="Problems\Microsoft\17\Screenshot 2018-12-01 15.23.48.png" />
+    <Content Include="Problems\Microsoft\18\Screenshot 2018-12-01 15.24.39.png" />
+    <Content Include="Problems\Microsoft\19\Screenshot 2018-12-01 15.26.13.png" />
+    <Content Include="Problems\Microsoft\1\Screenshot 2018-12-01 14.51.57.png" />
+    <Content Include="Problems\Microsoft\1\Screenshot 2018-12-01 14.52.14.png" />
+    <Content Include="Problems\Microsoft\20\Screenshot 2018-12-01 15.26.41.png" />
+    <Content Include="Problems\Microsoft\21\Screenshot 2018-12-01 15.31.02.png" />
+    <Content Include="Problems\Microsoft\22\Screenshot 2018-12-01 15.32.49.png" />
+    <Content Include="Problems\Microsoft\22\Screenshot 2018-12-01 15.33.01.png" />
+    <Content Include="Problems\Microsoft\22\Screenshot 2018-12-01 15.33.09.png" />
+    <Content Include="Problems\Microsoft\23\Screenshot 2018-12-01 15.35.15.png" />
+    <Content Include="Problems\Microsoft\23\Screenshot 2018-12-01 15.35.23.png" />
+    <Content Include="Problems\Microsoft\23\Screenshot 2018-12-01 15.35.30.png" />
+    <Content Include="Problems\Microsoft\24\Screenshot 2018-12-01 15.39.06.png" />
+    <Content Include="Problems\Microsoft\25\Screenshot 2018-12-01 15.39.53.png" />
+    <Content Include="Problems\Microsoft\2\Screenshot 2018-12-01 14.53.38.png" />
+    <Content Include="Problems\Microsoft\2\Screenshot 2018-12-01 14.54.07.png" />
+    <Content Include="Problems\Microsoft\2\Screenshot 2018-12-01 14.54.15.png" />
+    <Content Include="Problems\Microsoft\3\Screenshot 2018-12-01 14.57.05.png" />
+    <Content Include="Problems\Microsoft\3\Screenshot 2018-12-01 14.57.33.png" />
+    <Content Include="Problems\Microsoft\4\Screenshot 2018-12-01 15.08.30.png" />
+    <Content Include="Problems\Microsoft\4\Screenshot 2018-12-01 15.08.41.png" />
+    <Content Include="Problems\Microsoft\4\Screenshot 2018-12-01 15.09.00.png" />
+    <Content Include="Problems\Microsoft\4\Screenshot 2018-12-01 15.09.08.png" />
+    <Content Include="Problems\Microsoft\4\Screenshot 2018-12-01 15.09.16.png" />
+    <Content Include="Problems\Microsoft\4\Screenshot 2018-12-01 15.09.22.png" />
+    <Content Include="Problems\Microsoft\5\Screenshot 2018-12-01 15.09.54.png" />
+    <Content Include="Problems\Microsoft\5\Screenshot 2018-12-01 15.10.47.png" />
+    <Content Include="Problems\Microsoft\6\Screenshot 2018-12-01 15.11.13.png" />
+    <Content Include="Problems\Microsoft\7\Screenshot 2018-12-01 15.12.34.png" />
+    <Content Include="Problems\Microsoft\7\Screenshot 2018-12-01 15.12.42.png" />
+    <Content Include="Problems\Microsoft\8\Screenshot 2018-12-01 15.13.55.png" />
+    <Content Include="Problems\Microsoft\9\Screenshot 2018-12-01 15.15.30.png" />
+    <Content Include="Problems\Microsoft\9\Screenshot 2018-12-01 15.15.38.png" />
+    <Content Include="Problems\MinSwaps\Screenshot 2018-02-18 17.54.43.png" />
+    <Content Include="Problems\MinSwaps\Screenshot 2018-02-18 17.54.51.png" />
+    <Content Include="Problems\MinSwaps\Screenshot 2018-02-18 17.55.00.png" />
+    <Content Include="Problems\MinSwaps\Screenshot 2018-02-18 17.55.08.png" />
+    <Content Include="Problems\NoOfMarkers\Screenshot 2018-11-08 21.59.45.png" />
+    <Content Include="Problems\NoOfMarkers\Screenshot 2018-11-08 22.00.39.png" />
+    <Content Include="Problems\NoOfMarkers\Screenshot 2018-11-08 22.00.49.png" />
+    <Content Include="Problems\NoOfMarkers\Screenshot 2018-11-08 22.01.06.png" />
+    <Content Include="Problems\OperatorOverloading\Screenshot 2018-12-23 21.55.01.png" />
+    <Content Include="Problems\OperatorOverloading\Screenshot 2018-12-23 21.55.35.png" />
+    <Content Include="Problems\OperatorOverloading\Screenshot 2018-12-23 21.55.51.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.49.31.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.49.47.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.49.55.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.50.04.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.50.11.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.50.27.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.50.35.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.50.44.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.50.52.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.51.16.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.51.26.png" />
+    <Content Include="Problems\PrisonBreak\Screenshot 2018-12-23 21.51.34.png" />
+    <Content Include="Problems\RollingString\Screenshot 2018-12-23 21.51.47.png" />
+    <Content Include="Problems\RollingString\Screenshot 2018-12-23 21.52.03.png" />
+    <Content Include="Problems\RollingString\Screenshot 2018-12-23 21.52.10.png" />
+    <Content Include="Problems\RollingString\Screenshot 2018-12-23 21.52.16.png" />
+    <Content Include="Problems\RollingString\Screenshot 2018-12-23 21.52.27.png" />
+    <Content Include="Problems\RollingString\Screenshot 2018-12-23 21.52.41.png" />
+    <Content Include="Problems\RollingString\Screenshot 2018-12-23 21.52.57.png" />
+    <Content Include="Problems\Shift\Screenshot 2018-02-18 17.53.59.png" />
+    <Content Include="Problems\Shift\Screenshot 2018-02-18 17.54.11.png" />
+    <Content Include="Problems\Shift\Screenshot 2018-02-18 17.54.26.png" />
+    <Content Include="Problems\Shift\Screenshot 2018-02-18 17.54.33.png" />
+    <Content Include="Problems\Siemens\10\Screenshot 2019-02-03 13.33.21.png" />
+    <Content Include="Problems\Siemens\11\Screenshot 2019-02-03 13.33.39.png" />
+    <Content Include="Problems\Siemens\12\Screenshot 2019-02-03 13.33.54.png" />
+    <Content Include="Problems\Siemens\13\Screenshot 2019-02-03 13.35.55.png" />
+    <Content Include="Problems\Siemens\13\Screenshot 2019-02-03 13.36.13.png" />
+    <Content Include="Problems\Siemens\14\Screenshot 2019-02-03 13.36.55.png" />
+    <Content Include="Problems\Siemens\15\Screenshot 2019-02-03 13.37.20.png" />
+    <Content Include="Problems\Siemens\16\Screenshot 2019-02-03 13.37.55.png" />
+    <Content Include="Problems\Siemens\17\Screenshot 2019-02-03 13.38.33.png" />
+    <Content Include="Problems\Siemens\18\Screenshot 2019-02-03 13.38.56.png" />
+    <Content Include="Problems\Siemens\19\Screenshot 2019-02-03 13.39.13.png" />
+    <Content Include="Problems\Siemens\1\Screenshot 2019-02-03 13.25.43.png" />
+    <Content Include="Problems\Siemens\1\Screenshot 2019-02-03 13.25.55.png" />
+    <Content Include="Problems\Siemens\20\Screenshot 2019-02-03 13.39.26.png" />
+    <Content Include="Problems\Siemens\2\Screenshot 2019-02-03 13.30.29.png" />
+    <Content Include="Problems\Siemens\3\Screenshot 2019-02-03 13.30.55.png" />
+    <Content Include="Problems\Siemens\4\Screenshot 2019-02-03 13.31.19.png" />
+    <Content Include="Problems\Siemens\5\Screenshot 2019-02-03 13.31.32.png" />
+    <Content Include="Problems\Siemens\6\Screenshot 2019-02-03 13.32.03.png" />
+    <Content Include="Problems\Siemens\7\Screenshot 2019-02-03 13.32.34.png" />
+    <Content Include="Problems\Siemens\8\Screenshot 2019-02-03 13.32.58.png" />
+    <Content Include="Problems\Siemens\9\Screenshot 2019-02-03 13.33.09.png" />
+    <Content Include="Problems\Siemens\MaximumPositiveIndex\MPI.txt" />
+    <Content Include="Problems\Siemens\MaximumPositiveIndex\Screenshot 2019-02-03 13.39.40.png" />
+    <Content Include="Problems\Siemens\MaximumPositiveIndex\Screenshot 2019-02-03 13.39.48.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.53.16.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.53.29.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.53.36.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.53.45.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.53.54.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.54.01.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.54.08.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.54.21.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.54.32.png" />
+    <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.54.40.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
