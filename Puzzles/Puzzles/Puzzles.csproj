@@ -52,6 +52,8 @@
     <Compile Include="Tasks\ArrayContentCountSorting.cs" />
     <Compile Include="Tasks\ArraySubSets.cs" />
     <Compile Include="Tasks\BinarySearch.cs" />
+    <Compile Include="Tasks\Codility_AmazonIreland.cs" />
+    <Compile Include="Tasks\DanskeIT\Danske.cs" />
     <Compile Include="Tasks\DataLayer.cs" />
     <Compile Include="Tasks\Dijkstra.cs" />
     <Compile Include="Tasks\DisjointIntervals.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Tasks\Shell\ShellTwo.cs" />
     <Compile Include="Tasks\Siemens\MaximumPositiveIndex.cs" />
     <Compile Include="Tasks\SingleOccurenceElements.cs" />
+    <Compile Include="Tasks\SleepingHours.cs" />
     <Compile Include="Tasks\Sorting\BubbleSort.cs" />
     <Compile Include="Tasks\Sorting\HeapSort.cs" />
     <Compile Include="Tasks\Sorting\InsertionSort.cs" />
@@ -98,6 +101,7 @@
     <Compile Include="Tasks\ThePerfectTeam.cs" />
     <Compile Include="Tasks\TopViewBT.cs" />
     <Compile Include="Tasks\TowerOfHanoi.cs" />
+    <Compile Include="Tasks\UnitedShore.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
