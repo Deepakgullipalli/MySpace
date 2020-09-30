@@ -102,6 +102,7 @@
     <Compile Include="Tasks\TopViewBT.cs" />
     <Compile Include="Tasks\TowerOfHanoi.cs" />
     <Compile Include="Tasks\UnitedShore.cs" />
+    <Compile Include="Tasks\VMWare\QueOne.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

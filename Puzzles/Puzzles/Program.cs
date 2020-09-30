@@ -10,6 +10,7 @@ using Puzzles.Tasks.Microsoft.NullCheck;
 using Puzzles.Tasks.Shell;
 using Puzzles.Tasks.Siemens;
 using Puzzles.Tasks.Sorting;
+using Puzzles.Tasks.VMWare;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,6 +25,9 @@ namespace Puzzles
         static int x = 1;
         static void Main(string[] i)
         {
+            QueOne queOne = new QueOne();
+            queOne.QueOneMain();
+
             DisjointIntervals.gegmain();
             SumOfAllSubArraysEqualToK.LocalMain();
 
