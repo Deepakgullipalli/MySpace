@@ -247,7 +247,9 @@
     <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.54.32.png" />
     <Content Include="Problems\TheDuel\Screenshot 2018-12-23 21.54.40.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Problems\VMWare\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
