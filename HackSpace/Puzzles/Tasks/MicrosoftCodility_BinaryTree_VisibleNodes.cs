@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Puzzles.Tasks
 {
-    public class MsftCodility
+    public class MicrosoftCodility_BinaryTree_VisibleNodes
     {
         public void TreeMain()
         {
