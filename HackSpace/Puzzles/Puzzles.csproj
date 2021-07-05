@@ -48,6 +48,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartUp.cs" />
+    <Compile Include="Tasks\Amcat.cs" />
     <Compile Include="Tasks\Anagrams.cs" />
     <Compile Include="Tasks\ArrayContentCountSorting.cs" />
     <Compile Include="Tasks\ArraySubSets.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Tasks\Microsoft\MainMethod\MsFive.cs" />
     <Compile Include="Tasks\Microsoft\NullCheck\MsNine.cs" />
     <Compile Include="Tasks\Microsoft\Struct\MsSeventeen.cs" />
+    <Compile Include="Tasks\MsftCodility.cs" />
     <Compile Include="Tasks\NoOfMarkers.cs" />
     <Compile Include="Tasks\OperationOnSets.cs" />
     <Compile Include="Tasks\QueensMoves.cs" />

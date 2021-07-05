@@ -1,4 +1,6 @@
 ﻿using Concepts.Asynchronous;
+using Concepts.Generics;
+using Concepts.RefAndOut;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,19 @@ namespace Concepts
     {
         static void Main(string[] args)
         {
+            //MyGenerics myGenerics = new MyGenerics();
+            //myGenerics.TestGenericSort();
+
+            MyRefAndOut mro = new MyRefAndOut();
+            var person = new Person { Name = "One" };
+
+
+            mro.TestObject(person);
+            Console.WriteLine(person.Name); // will print One
+
+            mro.TestObjectByRef(ref person);
+            Console.WriteLine(person.Name); // will print Two
+
             ITestOne cOne = new ConcreteOne();
             cOne.Print();
             DemoOne d1 = new DemoOne();

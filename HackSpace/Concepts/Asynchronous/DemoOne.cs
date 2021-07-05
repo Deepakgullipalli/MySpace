@@ -36,5 +36,15 @@ namespace Concepts.Asynchronous
             });
             
         }
+
+        //public async string GetStateAsync()
+        //{
+        //    return "ns,f";
+        //}
+
+        //public  Task<string> GetStateAsync2()
+        //{
+        //    return "ns,f";
+        //}
     }
 }

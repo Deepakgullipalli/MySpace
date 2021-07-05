@@ -12,19 +12,20 @@ namespace DesignPatterns.FactoryMethodPattern.Client
         public static void FactoryMethodClientMain()
         {
             FactoryMethodManager manager = new FactoryMethodManager();
-            manager.FetchFactoryMethodFactory(1);
+            var x = manager.FetchFactoryMethodFactory(1);
+            x.DoConcreteCreatorOperation();
         }
     }
 
     public class FactoryMethodManager
     {
-        public void FetchFactoryMethodFactory(int empId)
+        public FactoryMethodCreator FetchFactoryMethodFactory(int empId)
         {
             if(empId == 1)
             {
-                new ConcreteCreatorOne().DoConcreteCreatorOperation();
+                return new ConcreteCreatorOne();
             }
-            new ConcreteCreatorTwo().DoConcreteCreatorOperation();
+            return new ConcreteCreatorTwo();
 
         }
     }

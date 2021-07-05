@@ -13,7 +13,7 @@ namespace Puzzles.Tasks
             ulong x;
             var charCount = SkillCount(skills);
             if (!charCount.ContainsKey('p') || !charCount.ContainsKey('c') || !charCount.ContainsKey('m')
-                || !charCount.ContainsKey('b') || !charCount.ContainsKey('z'))
+                || !charCount.ContainsKey('h') || !charCount.ContainsKey('s'))
             {
                 return 0;
             }

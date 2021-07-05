@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Asynchronous\DemoOne.cs" />
+    <Compile Include="Generics\MyGenerics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefAndOut\MyRefAndOut.cs" />
     <Compile Include="StartUp.cs" />
+    <Compile Include="Static\MyStatic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

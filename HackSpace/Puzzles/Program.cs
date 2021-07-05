@@ -25,17 +25,54 @@ namespace Puzzles
         static int x = 1;
         static void Main(string[] i)
         {
-            QueOne queOne = new QueOne();
-            queOne.QueOneMain();
+            MsftCodility msftCodility = new MsftCodility();
+            msftCodility.TreeMain();
 
-            DisjointIntervals.gegmain();
-            SumOfAllSubArraysEqualToK.LocalMain();
+            //try
+            //{
+            //    try
+            //    {
+            //        int x = 0;
+            //        int sgh = 5/x;    
+            //    }
+            //    catch (Exception)
+            //    {
 
-            ShellTwo s1 = new ShellTwo();
-            s1.ShellTwoMain();
+            //        throw;
+            //    }
+            //}
+            //catch (Exception)
+            //{
 
-            string s = "011100";
-            int y = mysolution(s); /*Convert.ToInt32(s, 2);*/
+            //    throw;
+            //}
+            //string ssjkgr = "slalkgdjo";
+            ////ssjkgr = ssjkgr.Distinct().ToList();
+            //HashSet<char> charSet = new HashSet<char>();
+            //foreach (var item in ssjkgr)
+            //{
+            //    if (charSet.Add(item))
+            //    {
+
+            //    }
+            //}
+            //string sfhgeyu = charSet.
+            //var akjfh = ssjkgr.Substring(6);
+            //int ssjkhf = int.Parse(ssjkgr.Substring(6));
+            //Amcat amcat = new Amcat();
+            //amcat.AmcatMain();
+
+            //QueOne queOne = new QueOne();
+            //queOne.QueOneMain();
+
+            //DisjointIntervals.gegmain();
+            //SumOfAllSubArraysEqualToK.LocalMain();
+
+            //ShellTwo s1 = new ShellTwo();
+            //s1.ShellTwoMain();
+
+            //string s = "011100";
+            //int y = mysolution(s); /*Convert.ToInt32(s, 2);*/
 
             //p jdkvn = new p();
             //r lkdvnk = new r();
@@ -49,8 +86,8 @@ namespace Puzzles
             //MyParent mp = new MyParent();
             //mp.MyMethod1();
 
-            //MyParent mpc = new MyChild();
-            //mpc.MyMethod1();
+            MyParent mpc = new MyChild();
+            mpc.MyMethod2();
 
             //OperationOnSets os = new OperationOnSets();
             //os.OperationOnSetsMain();
@@ -318,16 +355,20 @@ namespace Puzzles
 
     public class MyParent
     {
+        static MyParent()
+        {
+
+        }
         public MyParent()
         {
 
         }
-        public string MyMethod1()
+        public virtual string MyMethod1()
         {
             return "P 1";
         }
 
-        public string MyMethod2()
+        public virtual string MyMethod2()
         {
             return "P 2";
         }
@@ -335,16 +376,21 @@ namespace Puzzles
 
     public class MyChild : MyParent
     {
+        static MyChild()
+        {
+
+        }
         public MyChild()
         {
 
         }
-        public new int MyMethod1()
+        public new string MyMethod1()
         {
-            return 1;
+            return "1";
         }
 
-        public string MyMethod2()
+
+        new public string MyMethod2()
         {
             return "P 2";
         }
