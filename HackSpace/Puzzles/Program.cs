@@ -25,8 +25,9 @@ namespace Puzzles
         static int x = 1;
         static void Main(string[] i)
         {
-            MicrosoftCodility_BinaryTree_VisibleNodes msftCodility = new MicrosoftCodility_BinaryTree_VisibleNodes();
-            msftCodility.TreeMain();
+            PermutationOfString.PermMain();
+            //MicrosoftCodility_BinaryTree_VisibleNodes msftCodility = new MicrosoftCodility_BinaryTree_VisibleNodes();
+            //msftCodility.TreeMain();
 
             //try
             //{

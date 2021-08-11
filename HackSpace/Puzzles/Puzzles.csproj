@@ -83,6 +83,7 @@
     <Compile Include="Tasks\MicrosoftCodility_BinaryTree_VisibleNodes.cs" />
     <Compile Include="Tasks\NoOfMarkers.cs" />
     <Compile Include="Tasks\OperationOnSets.cs" />
+    <Compile Include="Tasks\PermutationOfString.cs" />
     <Compile Include="Tasks\QueensMoves.cs" />
     <Compile Include="Tasks\RollingString.cs" />
     <Compile Include="Tasks\Shell\ShellOne.cs" />
