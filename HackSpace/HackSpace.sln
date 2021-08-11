@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email", "Email\Email.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{691E1462-DE66-4412-BE92-2CDCD199FC31}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{443BA815-311F-4824-BE08-C109F9016326}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Micro One", "Micro One", "{B8FB0AC6-79CF-437D-B04E-9461FA1BC157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackspace.MicroAppOne", "Hackspace.MicroAppOne\Hackspace.MicroAppOne.csproj", "{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +39,17 @@ Global
 		{691E1462-DE66-4412-BE92-2CDCD199FC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{691E1462-DE66-4412-BE92-2CDCD199FC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{691E1462-DE66-4412-BE92-2CDCD199FC31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8FB0AC6-79CF-437D-B04E-9461FA1BC157} = {443BA815-311F-4824-BE08-C109F9016326}
+		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD} = {B8FB0AC6-79CF-437D-B04E-9461FA1BC157}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C403F396-50F7-40CA-9933-974CC90A8DE3}
