@@ -31,7 +31,7 @@ namespace Puzzles.Tasks
             {
                 if (str1[i] == pattern[0])
                 {
-                    count += test(str1.Substring(i, str1.Length - i), pattern);
+                    //count += test(str1.Substring(i, str1.Length - i), pattern);
                 }
             }
 

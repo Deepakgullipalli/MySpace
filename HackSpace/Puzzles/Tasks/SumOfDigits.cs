@@ -20,4 +20,5 @@ namespace Puzzles.Tasks
 
             return sum;
         }
+    }
 }

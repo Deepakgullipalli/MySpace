@@ -105,7 +105,7 @@
     <Compile Include="Tasks\Sorting\SelectionSort.cs" />
     <Compile Include="Tasks\SumOfAllSubArraysEqualToK.cs" />
     <Compile Include="Tasks\SumOfDigits.cs" />
-    <Compile Include="Tasks\Test.cs" />
+    <Compile Include="Tasks\Sort.cs" />
     <Compile Include="Tasks\TheDuel.cs" />
     <Compile Include="Tasks\ThePerfectTeam.cs" />
     <Compile Include="Tasks\TopViewBT.cs" />

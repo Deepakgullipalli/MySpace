@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Puzzles.Tasks
 {
-    public class Test
+    public class Sort
     {
         public void TestMain()
         {
