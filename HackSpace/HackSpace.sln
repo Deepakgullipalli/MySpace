@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Puzzles", "Puzzles\Puzzles.csproj", "{0748B0E4-A030-400C-8F92-CC29EAC901A3}"
 EndProject
@@ -10,12 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email", "Email\Email.csproj", "{B992CA7A-8BD9-44B6-ACCA-8A7E940646CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{691E1462-DE66-4412-BE92-2CDCD199FC31}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{443BA815-311F-4824-BE08-C109F9016326}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Micro One", "Micro One", "{B8FB0AC6-79CF-437D-B04E-9461FA1BC157}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackspace.MicroAppOne", "Hackspace.MicroAppOne\Hackspace.MicroAppOne.csproj", "{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,17 +33,9 @@ Global
 		{691E1462-DE66-4412-BE92-2CDCD199FC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{691E1462-DE66-4412-BE92-2CDCD199FC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{691E1462-DE66-4412-BE92-2CDCD199FC31}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{B8FB0AC6-79CF-437D-B04E-9461FA1BC157} = {443BA815-311F-4824-BE08-C109F9016326}
-		{54FAB533-F8E2-4817-830C-4BFAFAEBFACD} = {B8FB0AC6-79CF-437D-B04E-9461FA1BC157}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C403F396-50F7-40CA-9933-974CC90A8DE3}
