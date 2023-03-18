@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Puzzles</RootNamespace>
     <AssemblyName>Puzzles</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,6 +62,7 @@
     <Compile Include="Tasks\FactorsOfThreeAndFive.cs" />
     <Compile Include="Tasks\Fibonacci.cs" />
     <Compile Include="Tasks\FunWithAnagrams.cs" />
+    <Compile Include="Tasks\JsonCleaning.cs" />
     <Compile Include="Tasks\Knapsack.cs" />
     <Compile Include="Tasks\MaxSumArray.cs" />
     <Compile Include="Tasks\Microsoft\Abstract\Abstraction.cs" />
@@ -83,8 +85,11 @@
     <Compile Include="Tasks\MicrosoftCodility_BinaryTree_VisibleNodes.cs" />
     <Compile Include="Tasks\NoOfMarkers.cs" />
     <Compile Include="Tasks\OperationOnSets.cs" />
+    <Compile Include="Tasks\PatternOccurrences.cs" />
     <Compile Include="Tasks\PermutationOfString.cs" />
+    <Compile Include="Tasks\ProductOfDigits.cs" />
     <Compile Include="Tasks\QueensMoves.cs" />
+    <Compile Include="Tasks\RepeatedValidSubstrings.cs" />
     <Compile Include="Tasks\RollingString.cs" />
     <Compile Include="Tasks\Shell\ShellOne.cs" />
     <Compile Include="Tasks\Shell\ShellTwo.cs" />
@@ -99,6 +104,7 @@
     <Compile Include="Tasks\Sorting\RecursiveBubbleSort.cs" />
     <Compile Include="Tasks\Sorting\SelectionSort.cs" />
     <Compile Include="Tasks\SumOfAllSubArraysEqualToK.cs" />
+    <Compile Include="Tasks\SumOfDigits.cs" />
     <Compile Include="Tasks\Test.cs" />
     <Compile Include="Tasks\TheDuel.cs" />
     <Compile Include="Tasks\ThePerfectTeam.cs" />
