@@ -6,3 +6,4 @@ Microsoft.Exchange.WebServices.2.2
 /HackSpace/Hackspace.MicroAppOne/obj
 /HackSpace/.vs/HackSpace
 /.vs
+/HackSpace/packages/Newtonsoft.Json.13.0.3
