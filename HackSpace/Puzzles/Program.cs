@@ -1,4 +1,6 @@
-﻿using Puzzles.Tasks;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Puzzles.Tasks;
 using Puzzles.Tasks.Microsoft.AsyncTask;
 using Puzzles.Tasks.Microsoft.BinaryJumps;
 using Puzzles.Tasks.Microsoft.Constructor;
@@ -15,17 +17,70 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Puzzles
 {
+
+    public class DevicePage
+    {
+        public int page { get; set; }
+        public int per_page { get; set; }
+        public int total { get; set; }
+        public int total_pages { get; set; }
+        public Device[] data { get; set; }
+    }
+
+    public class Device
+    {
+        public string id { get; set; }
+        public long timestamp { get; set; }
+        public string status { get; set; }
+        public OperatingParams operatingParams { get; set; }
+    }
+
+    public class OperatingParams
+    {
+        public int rotorSpeed { get; set; }
+        public int slack { get; set; }
+        public int rootThreshold { get; set; }
+    }
+
+
+
     public class Program
     {
         static int x = 1;
         static void Main(string[] i)
         {
-            PermutationOfString.PermMain();
+            NewMain();
+            List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+
+            Console.WriteLine("Before reverse:");
+            foreach (int num in numbers)
+            {
+                Console.WriteLine(num);
+            }
+
+            // Reverse the list
+            numbers.Reverse();
+
+            Console.WriteLine("\nAfter reverse:");
+            foreach (int num in numbers)
+            {
+                Console.WriteLine(num);
+            }
+
+            Daimler d = new Daimler();
+            //SumOfLeftLeavesInBinaryTree sumOfLeftLeavesInBinaryTree = new SumOfLeftLeavesInBinaryTree();
+            //sumOfLeftLeavesInBinaryTree.SumOfLeftLeavesInBinaryTreeMain();
+            //PermutationOfString.PermMain();
             //MicrosoftCodility_BinaryTree_VisibleNodes msftCodility = new MicrosoftCodility_BinaryTree_VisibleNodes();
             //msftCodility.TreeMain();
 
@@ -225,6 +280,64 @@ namespace Puzzles
             //str = j.ToString()
         }
 
+        public static async Task<int> NumDevices(string statusQuery, int threshold, string dateStr)
+        {
+            int totalMatchingDevices = 0;
+
+            using (HttpClient client = new HttpClient())
+            {
+                int page = 1;
+                while (true)
+                {
+                    string url = $"https://jsonmock.hackerrank.com/api/iot_devices/search?status={statusQuery}&page={page}";
+                    HttpResponseMessage response = await client.GetAsync(url);
+                    string jsonResponse = await response.Content.ReadAsStringAsync();
+
+                    DevicePage devicePage = JsonConvert.DeserializeObject<DevicePage>(jsonResponse);
+
+                    foreach (var device in devicePage.data)
+                    {
+                        DateTime deviceDate = DateTimeOffset.FromUnixTimeMilliseconds(device.timestamp).DateTime;
+
+                        string deviceDateStr = $"{deviceDate.Month.ToString("D2")}-{deviceDate.Year}";
+                        if (deviceDateStr == dateStr && device.operatingParams.rootThreshold > threshold)
+                        {
+                            totalMatchingDevices++;
+                        }
+                    }
+
+                    if (page == devicePage.total_pages)
+                    {
+                        break;
+                    }
+
+                    page++;
+                }
+            }
+
+            return totalMatchingDevices;
+        }
+
+        static void NewMain()
+        {
+            HttpClient client = new HttpClient();
+
+            string page = "pizza"; // Change to the name of the page you want
+            string url = $"https://en.wikipedia.org/w/api.php?format=json&action=parse&prop=text&section=0&page={page}";
+            string response =  client.GetStringAsync(url).Result;
+
+            JObject json = JObject.Parse(response);
+
+            // Extract text from the page
+            var pageText = json["parse"]["text"]["*"].Value<string>();
+
+            string targetString = "Pizza"; // Replace with your target string
+
+            // Use Regex to count occurrences of the target string
+            int count = Regex.Matches(pageText, targetString).Count;
+
+            Console.WriteLine($"The string \"{targetString}\" occurs {count} times in the text.");
+        }
         public void m1()
         {
 

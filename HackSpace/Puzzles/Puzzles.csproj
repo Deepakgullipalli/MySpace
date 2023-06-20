@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -55,6 +58,7 @@
     <Compile Include="Tasks\ArraySubSets.cs" />
     <Compile Include="Tasks\BinarySearch.cs" />
     <Compile Include="Tasks\Codility_AmazonIreland.cs" />
+    <Compile Include="Tasks\Daimler.cs" />
     <Compile Include="Tasks\DanskeIT\Danske.cs" />
     <Compile Include="Tasks\DataLayer.cs" />
     <Compile Include="Tasks\Dijkstra.cs" />
@@ -106,6 +110,7 @@
     <Compile Include="Tasks\SumOfAllSubArraysEqualToK.cs" />
     <Compile Include="Tasks\SumOfDigits.cs" />
     <Compile Include="Tasks\Sort.cs" />
+    <Compile Include="Tasks\SumOfLeftLeavesInBinaryTree.cs" />
     <Compile Include="Tasks\TheDuel.cs" />
     <Compile Include="Tasks\ThePerfectTeam.cs" />
     <Compile Include="Tasks\TopViewBT.cs" />
@@ -115,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Problems\Amazon\Questions.txt" />
