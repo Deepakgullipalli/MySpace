@@ -6,3 +6,9 @@ Microsoft.Exchange.WebServices.2.2
 /HackSpace/Hackspace.MicroAppOne/obj
 /HackSpace/.vs/HackSpace
 /.vs
+/HackSpace/Utilities/obj
+/HackSpace/.vs/ProjectEvaluation
+/HackSpace/Concepts/obj/Release
+/HackSpace/DesignPatterns/obj/Release
+/HackSpace/Email/obj/Release
+/HackSpace/Puzzles/obj/Release
